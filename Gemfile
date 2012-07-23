@@ -15,6 +15,13 @@ end
 group :test do
    gem 'rspec'
    gem 'sqlite3' 
+   gem 'spork'  
+   gem 'ZenTest'
+   gem 'autotest-rails'
+   gem 'autotest-growl'
+
+   gem 'test_notifier'
+   gem 'webrat'
 end
 
 
