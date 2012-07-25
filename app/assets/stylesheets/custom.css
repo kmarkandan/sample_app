@@ -54,13 +54,13 @@ nav ul {
 }
 
 nav ul li {
- list-style-type = none;
+ list-style-type : none;
  display: inline-block;
  padding: 0.2em 0;
 }
 
 nav ul li a{
-	padding: 0 5 px;
+	padding: 0 5px;
 	font-weight: bold;
 }
 
@@ -86,13 +86,12 @@ a.signup_button {
 }
 
 .round {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+ 
 	border-radius: 10px;
 }
 footer {
 	text-align: center;
-	margin-top 10px;
+	margin-top: 10px;
 	width: 710px;
 	margin-left: auto;
 	margin-right: auto;
