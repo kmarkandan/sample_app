@@ -8,7 +8,8 @@ gem 'pg'
 
 group :development do
 	gem 'rspec-rails'
-	gem 'sqlite3'
+	gem 'sqlite3'  
+	gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end 
 
 group :test do
