@@ -28,13 +28,14 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'sprockets' 
   gem 'sass-rails', "3.1.4"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'therubyracer' 
   gem 'compass-rails', "~> 1.0.1"  
 end
-
+   gem 'compass', :require => false
 gem 'sass'
 
 gem 'zen-grids'

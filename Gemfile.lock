@@ -160,6 +160,7 @@ DEPENDENCIES
   autotest-growl
   autotest-rails
   coffee-rails (~> 3.1.0)
+  compass
   compass-rails (~> 1.0.1)
   jquery-rails
   pg
@@ -169,6 +170,7 @@ DEPENDENCIES
   sass
   sass-rails (= 3.1.4)
   spork
+  sprockets
   sqlite3
   test_notifier
   therubyracer

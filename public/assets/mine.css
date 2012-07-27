@@ -1,0 +1,41 @@
+/* line 6, ../../app/assets/stylesheets/mine.css.scss */
+.two-col {
+  width: 670px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #cccfff;
+}
+/* line 9, ../../app/assets/stylesheets/mine.css.scss */
+.two-col #header, .two-col #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 670px;
+}
+/* line 147, ../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .two-col #header, * html .two-col #footer {
+  overflow-x: hidden;
+}
+/* line 11, ../../app/assets/stylesheets/mine.css.scss */
+.two-col #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 160px;
+}
+/* line 147, ../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .two-col #sidebar {
+  overflow-x: hidden;
+}
+/* line 13, ../../app/assets/stylesheets/mine.css.scss */
+.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 500px;
+}
+/* line 147, ../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .two-col #content {
+  overflow-x: hidden;
+}
