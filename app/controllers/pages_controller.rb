@@ -14,6 +14,11 @@ class PagesController < ApplicationController
    end
    def exploration
     @title = "Exploration"
-   end
-   
+   end 
+   def exploration2
+     @title = "Exploration"
+    end
+    def exploration3
+       @title = "Exploration"
+      end
 end

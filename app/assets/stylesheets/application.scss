@@ -5,8 +5,8 @@
 *= require_self
 *= require 'screen'
 *= require 'print'
-*= require 'custom'
 *= require 'mine'
 *= require 'ie' 
+*= require "jquery.ui.all"
 */
- @import "mine.css.scss"
+@import "letstrycolumns"; 

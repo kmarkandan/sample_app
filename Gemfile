@@ -10,18 +10,23 @@ group :development do
 	gem 'rspec-rails'
 	gem 'sqlite3'  
 	gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+  gem 'guard-rspec'
 end 
 
 group :test do
    gem 'rspec'
-   gem 'sqlite3' 
+   gem 'sqlite3'
+   gem 'guard-spork' 
    gem 'spork'  
    gem 'ZenTest'
    gem 'autotest-rails'
    gem 'autotest-growl'
-
+   gem 'guard-rspec'
    gem 'test_notifier'
    gem 'webrat'
+   gem 'capybara'
+   gem 'growl' 
+   gem 'rb-fsevent'
 end
 
 
@@ -32,15 +37,19 @@ group :assets do
   gem 'sass-rails', "3.1.4"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
-  gem 'therubyracer' 
+  gem 'therubyracer'  
   gem 'compass-rails', "~> 1.0.1"  
-end
-   gem 'compass', :require => false
-gem 'sass'
+	gem 'jquery-rails' 
 
+end
+gem 'compass', :require => false
+gem 'sass'      
+gem 'haml'
+gem 'haml-rails'
+gem 'jquery-ui-rails'
+ 
 gem 'zen-grids'
 
-gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
