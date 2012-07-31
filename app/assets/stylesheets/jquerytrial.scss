@@ -1,0 +1,49 @@
+@import "compass";
+@import "blueprint";
+
+@import "compass/css3";
+ 
+
+ 
+.example {
+   }
+
+#pageContainer{      
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: rgb(32,32,32); // Old browsers
+@include filter-gradient(#202020, #1e1e1e, vertical); // IE6-9
+@include background-image(linear-gradient(top,  rgba(32,32,32,1) 0%,rgba(37,37,37,1) 2%,rgba(37,37,37,1) 45%,rgba(39,39,39,1) 46%,rgba(38,38,38,1) 46%,rgba(34,34,34,1) 47%,rgba(41,41,41,1) 47%,rgba(41,41,41,1) 47%,rgba(34,34,34,1) 48%,rgba(38,38,38,1) 48%,rgba(36,36,36,1) 52%,rgba(39,39,39,1) 52%,rgba(35,35,35,1) 52%,rgba(41,41,41,1) 53%,rgba(36,36,36,1) 53%,rgba(34,34,34,1) 53%,rgba(36,36,36,1) 54%,rgba(32,32,32,1) 54%,rgba(39,39,39,1) 55%,rgba(37,37,37,1) 56%,rgba(37,37,37,1) 97%,rgba(35,35,35,1) 98%,rgba(36,36,36,1) 98%,rgba(33,33,33,1) 98%,rgba(34,34,34,1) 99%,rgba(30,30,30,1) 100%,rgba(30,30,30,1) 100%));
+}
+textarea{
+	color: black;
+}
+#footer_slide { 
+
+$blueprint_grid_columns: 4;  
+$blueprint_grid_width: 315px;
+height: 400px;
+@include filter-gradient(#63b6db, #309dcf, vertical); // IE6-9
+@include background-image(linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%));
+}
+
+.box
+{   
+ 
+	height: 400px;
+
+
+	@include font-face("Blooming Grove", font-files("examples/bgrove.ttf", "examples/bgrove.otf"));  
+	@include border(red, 3px);
+	@include column(1, true);
+	font-family: "Blooming Grove";
+  font-size: 2em; 
+ 
+} 
+
+.box h2 {
+	text-align: center;
+		color: green;  
+font:bold 32px Georgia, "Times New Roman", Times, serif;
+}               
+
+
