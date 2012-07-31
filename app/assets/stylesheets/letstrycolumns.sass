@@ -6,17 +6,14 @@ $blueprint_grid_width: 200px
 
 .five-col
 	+container  
-	background-color: brown
 	#header, #footer
 		+column(5)
 		+column-rule-color("red")	
 	#sidebar
 		+column(1, true) 
-		+column-rule-color("yellow")
-	.contents
-		+column(4) 
-		.box 
-			+text-shadow(darken(#0cc, 50%)) 
-			text-align: center   
-			+border(orange, 5px)
-			+column(1, true)
+		+border(green, 2px)
+	.box 
+		+text-shadow(darken(#0cc, 50%)) 
+		text-align: center   
+		+border(orange, 5px)
+		+column(1, true)
