@@ -20,5 +20,8 @@ class PagesController < ApplicationController
     end
     def exploration3
        @title = "Exploration"
-      end
+      end  
+    def sasssussy
+      @title = "sasssussy"
+    end
 end

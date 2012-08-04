@@ -39,7 +39,8 @@ group :assets do
   gem 'uglifier'
   gem 'therubyracer'  
   gem 'compass-rails', "~> 1.0.1"  
-	gem 'jquery-rails' 
+	gem 'jquery-rails'
+	gem 'susy'   
 
 end
 gem 'compass', :require => false
@@ -47,6 +48,7 @@ gem 'sass'
 gem 'haml'
 gem 'haml-rails'
 gem 'jquery-ui-rails'
+
  
 gem 'zen-grids'
 

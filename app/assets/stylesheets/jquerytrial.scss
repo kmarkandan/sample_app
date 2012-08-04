@@ -1,12 +1,24 @@
+@import "susy";
 @import "compass";
 @import "blueprint";
-
+@import "blueprint/grid.scss";
 @import "compass/css3";
- 
 
+
+/* 
+$blueprint-grid-columns: 4;  
+ $blueprint-grid-width: 250px;
+$blueprint-grid-margin: 0px; 
  
-.example {
-   }
+        
+$total-columns  : 4;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+ */
+input{
+color: black;
+} 
 
 #pageContainer{      
 // needs latest Compass, add '@import "compass"' to your scss
@@ -17,33 +29,107 @@ background-color: rgb(32,32,32); // Old browsers
 textarea{
 	color: black;
 }
-#footer_slide { 
-
-$blueprint_grid_columns: 4;  
-$blueprint_grid_width: 315px;
+#footer_slide {
+//@include container; 
 height: 400px;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px ;  
+box-shadow: 10px yellow; 
 @include filter-gradient(#63b6db, #309dcf, vertical); // IE6-9
 @include background-image(linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%));
 }
+  
+.cont{
+// @include container;
+@include font-face("Blooming Grove", font-files("examples/bgrove.ttf", "examples/bgrove.otf"));
+height: 400px;
+ font-family: "Blooming Grove";
+font-size: 3em;
 
-.box
-{   
+text-align: center;     
+} 
+
+
+#box1
+{
+  
+font-size: 1em;
+box-shadow: 2px 2px 2px 2px brown;
+@include span-columns(1, 4);  
+
+}
+#box2
+{
+font-size: 1em; 
+box-shadow: 2px 2px 2px 2px brown; 
+@include span-columns(1, 4); 
+}
+#box3
+{ 
+font-size: 1em;
+box-shadow: 2px 2px 2px 2px brown;     
+@include span-columns(1, 4); 
+}
+#box4
+{
+font-size: 1em;    
+box-shadow: 2px 2px 2px 2px brown; 
+@include span-columns(1 omega, 4);
+} 
+   
+#situation_footer
+{
+padding-top: 1em;
+padding-left: 0.2em;
+text-align: left;
+color: green;
+font-size: 0.5em; 
+@include span-columns(1, 4); 
+}
+#automatic_footer{
+padding-top: 1em;
+padding-left: 0.2em;
+text-align: left;
+color: green;
+font-size: 0.5em; 
+@include span-columns(1, 4);
+}
+#rational_footer{
+padding-top: 1em;
+text-align: left;
+color: green;
+font-size: 0.5em;
+@include span-columns(1, 4);
+margin-right: 0px; 
+}
+#actions_footer{ 
+padding-top: 1em;
+ @include span-columns(1 omega, 4); 
+text-align: left;
+color: green;
+font-size: 0.5em;
  
-	height: 400px;
+}
 
+/*
+.box
+{  
 
-	@include font-face("Blooming Grove", font-files("examples/bgrove.ttf", "examples/bgrove.otf"));  
-	@include border(red, 3px);
+	
 	@include column(1, true);
-	font-family: "Blooming Grove";
+
+
+ 
+ 
   font-size: 2em; 
  
 } 
 
-.box h2 {
+.cont h2 {
 	text-align: center;
 		color: green;  
 font:bold 32px Georgia, "Times New Roman", Times, serif;
 }               
-
+ */
 

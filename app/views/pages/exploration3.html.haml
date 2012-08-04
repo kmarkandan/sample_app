@@ -13,28 +13,35 @@
           %textarea{:id => "text_automatic_id", :rows => 6, :cols => 200}
           %input{:id =>"automatic_id", :type => "button", :value => "Submit"}
       .slide
-        %h2 Alternative Outlook
+        %h2 Rational Outlook
         %form
           %textarea{:id => "text_rational_id", :rows => 6, :cols => 200}
           %input{:id =>"rational_id", :type => "button", :value => "Submit"}
       .slide
-        %h2 Reframed Cognitive Thought
+        %h2 Action
         %form
           %textarea{:id => "text_actions_id", :rows => 6, :cols => 200}
           %input{:id =>"actions_id", :type => "button", :value => "Submit"}
   #footer_slide
-    .box
-      %h2 Situation
-      #situation_footer 
-    .box 
-      %h2 Automatic Thoughts 
+    .cont
+      #box1
+        %h2 Situation 
+      #box2 
+        %h2 Automatic Thoughts 
+      #box3
+        %h2 Rational Outlook
+      #box4
+        %h2 Actions
+                          
+      #situation_footer
       #automatic_footer
-    .box
-      %h2 Alternative Rational Thought
       #rational_footer
-    .box
-      %h2 Actions
       #actions_footer
+    //  %p{:id => "situation_footer"}
+    //  %p{:id => "automatic_footer"}
+    //  %p{:id => "rational_footer"}
+    //  %p{:id => "actions_footer"}
+
         
   / Slideshow HTML
 
