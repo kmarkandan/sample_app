@@ -26,7 +26,8 @@ group :test do
    gem 'webrat'
    gem 'capybara'
    gem 'growl' 
-   gem 'rb-fsevent'
+   gem 'rb-fsevent' 
+   gem 'factory_girl_rails'
 end
 
 
