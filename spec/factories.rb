@@ -5,4 +5,4 @@ FactoryGirl.define do
     user.password             "foobar"
     user.password_confirmation "foobar"
   end
-end 
+end              

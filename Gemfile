@@ -45,6 +45,7 @@ group :assets do
 
 end
 gem 'compass', :require => false
+gem 'gravatar_image_tag'
 gem 'sass'      
 gem 'haml'
 gem 'haml-rails'
